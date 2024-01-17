@@ -32,5 +32,5 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  console.log(__uv$config.prefix + __uv$config.encodeUrl(url));
+  document.querySelector("span").innerHTML = __uv$config.prefix + __uv$config.encodeUrl(url)
 });
