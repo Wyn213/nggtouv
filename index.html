@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GG bypass</title>
+  <script src="uv/uv.bundle.js" defer></script>
+  <script src="uv/uv.config.js" defer></script>
+  <script src="register-sw.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="script/index.js" defer></script>
+  <style>
+    body {
+      background-color: rgb(40, 40, 40);
+    }
+    
+    .apps a {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .apps {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #title {
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    #outputLink {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <form id="uv-form" class="flex-center">
+    <input
+      id="uv-search-engine"
+      value="https://www.google.com/search?q=%s"
+      type="hidden"
+    />
+    <input id="uv-address" type="text" placeholder="Search the web freely" />
+  </form>
+</body>
+</html>
